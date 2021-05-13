@@ -1,0 +1,122 @@
+@font-face {
+    font-family: nodesto;
+    src: url(../font/Nodesto\ Caps\ Condensed.otf);
+}
+@font-face {
+    font-family: mreaves;
+    src: url(../font/Mr\ Eaves\ Small\ Caps.otf);
+}
+@font-face {
+    font-family: scaly;
+    src: url(../font/Scaly\ Sans.otf);
+}
+*{
+    text-decoration: none;
+}
+body{
+    margin:0;
+    background-image: url("../img/body.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 200vh;
+    max-width: 100vmax;
+}
+nav, section, article, aside{
+    border: 10px double #333;
+    margin: 10px;
+    padding: 5px;
+    background-color: grey;
+    background-image: url("../img/parchment.jpg");
+    color: white;
+    font-size: 40px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+header{
+    text-align: center;
+    border: 10px double #333;
+    margin: 10px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    background-image: url("../img/header.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 20vh;
+    font-family: nodesto;
+}
+header:hover h1{
+   opacity: 85%;
+   color: grey;
+   transition: 0.2s;
+}
+.content, aside{
+    width: 100%;
+    display: inline-block;
+}
+main{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    font-family: mreaves;
+}
+section p{
+    text-align: center;
+}
+nav a{
+    color: white;
+}
+a:hover{
+    color: grey;
+    opacity: 85%;
+    transition: 0.2s;
+}
+footer{
+    z-index: -1;
+    position: fixed;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    border: 10px double #333;
+    padding: 5px;
+    background-image: url("../img/parchment.jpg");
+    color: white;
+    font-size: 40px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+  }
+  input[type=button]{
+    align-self: center;
+    background-image: url("../img/button.jpg");
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: nodesto;
+    font-size: 30px;
+    color: white;
+  }
+  input[type=button]:hover{
+    opacity: 85%;
+    color: green;
+    transition: 0.2s;
+  }
