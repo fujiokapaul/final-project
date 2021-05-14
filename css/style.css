@@ -56,6 +56,10 @@ header:hover h1{
 img{
     width: 100%;
 }
+.gallery{
+    font-family: nodesto;
+    text-align: top right;
+}
 .stepper{
     background-image:url(../img/stepper.jpg);
     background-size: cover;
